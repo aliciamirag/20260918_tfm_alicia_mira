@@ -15,15 +15,22 @@ in the appendices.
 ## Data
 
 The analysis uses **CIS Study 3506**, *Encuesta Social General Española 2024
-(II) / Familia y género (IV) (ISSP)*. The microdata are not redistributed here.
-They are freely available from the CIS data bank:
+(II) / Familia y género (IV) (ISSP)*. The microdata are included in this
+repository as `3506_num.csv`, so the script runs as soon as the repository is
+cloned; no separate download is needed.
+
+The file was downloaded from the CIS data bank on [DD Month YYYY] and is
+redistributed **unmodified**, under the CIS conditions for the reuse of its
+data, which authorise reproduction and distribution provided the source is
+acknowledged. Source: Centro de Investigaciones Sociológicas (CIS), Study 3506.
+The original is available at:
 
 <https://www.cis.es/en/surveys/encuesta-social-general-espanola-2024-ii-esge-/-familia-y-genero-iv-issp->
 
-Download the CSV version of the microdata, rename it `3506_num.csv` and place
-it in the root of this repository, beside the script. The file is expected to
-be semicolon-separated, with a comma as the decimal mark and UTF-8 encoding,
-which is how the CIS distributes it.
+The file is semicolon-separated, with a comma as the decimal mark and UTF-8
+encoding, which is how the CIS distributes it. The reproducibility checks at
+the start of the run (1,722 raw rows, 1,714 cases in the working sample, and
+so on) confirm that the file has not changed.
 
 ## Running the analysis
 
@@ -33,7 +40,7 @@ source("20260918_script_tfm_alicia_mira.R")
 ```
 
 The script must be run with the repository root as the working directory: it
-reads `3506_num.csv` and writes to `output/` using relative paths. Running time
+reads `3506_num.csv` from the root and writes to `output/` using relative paths. Running time
 is roughly fifteen to twenty minutes, dominated by the multiple imputation, the
 RIF cluster bootstrap and the Oaxaca–Blinder bootstrap.
 
@@ -111,5 +118,6 @@ If you use this code, please cite the thesis and the data source separately.
 
 ## Licence
 
-Code released under the MIT Licence (see `LICENSE`). The CIS microdata are not
-covered by this licence and remain subject to the CIS conditions of reuse.
+Code released under the MIT Licence (see `LICENSE`). The CIS microdata
+(`3506_num.csv`) are not covered by this licence: they are redistributed under,
+and remain subject to, the CIS conditions of reuse.
