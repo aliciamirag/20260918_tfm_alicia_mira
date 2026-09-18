@@ -4,8 +4,7 @@
 .httr-oauth
 .DS_Store
 .quarto
-# CIS microdata: not redistributed, download from the CIS data bank
-3506_num.csv
+# Other formats of the CIS microdata (only the CSV is tracked)
 *.sav
 *.dta
 MD3506*
