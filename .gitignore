@@ -1,0 +1,28 @@
+.Rproj.user
+.Rhistory
+.RData
+.httr-oauth
+.DS_Store
+.quarto
+# CIS microdata: not redistributed, download from the CIS data bank
+3506_num.csv
+*.sav
+*.dta
+MD3506*
+DA3506*
+
+# Everything the script generates
+output/
+
+# R session artefacts
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*~
+.vscode/
